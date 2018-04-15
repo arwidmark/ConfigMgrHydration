@@ -23,7 +23,7 @@ $SiteCode = Get-PSDrive -PSProvider CMSITE
 Set-Location "$($SiteCode.Name):\"
 
 $Collection = "SUM Workstations Pilot"
-$ADRName = "Client Updates 2015"
+$ADRName = "Client Updates 2018"
 $SiteServer = $Env:COMPUTERNAME
 $SiteServerFQDN = "$SiteServer.$Env:USERDNSDOMAIN"
 $DeployPackageLocation = "\\$SiteServer\Sources\Software Updates\$ADRName"
